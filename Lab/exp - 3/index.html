@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #32CD32;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .college-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        .college-details img {
+            height: 12vh;
+            margin-right: 10vh;
+        }
+        .photo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 120px;
+            height: 150px;
+            border: 1px solid black;
+            background: url('ASWATH img 2.jpg') no-repeat center center/cover;
+        }
+        .info {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .info td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .info input {
+            width: 100%;
+            border: none;
+            text-align: left;
+            background-color: #32CD32;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="college-details">
+            <img src="kec logo.png" alt="KEC Logo">
+            <div>
+                <h2 style="margin-right: 100px;">KONGU ENGINEERING COLLEGE <br>(Autonomous)</h2>
+                <h4 style="margin-right: 100px; margin-top: 20px;">THOPPUPALAYAM (Po), PERUNDURAI (Tk), <br>ERODE - 638 060, TAMILNADU, INDIA</h4>
+            </div>
+        </div>
+        <div class="header">STUDENT RECORD</div>
+        <div class="photo"></div>
+        <table class="info">
+            <tr>
+                <td><b>NAME:</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>REG No.:</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>PROGRAMME:</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>BRANCH & SECTION:</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>PERIOD OF STUDY:</b></td>
+                <td><b>From </b><input type="text" style="width: 60px;"> <b>To </b><input type="text" style="width: 60px;"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

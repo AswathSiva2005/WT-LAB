@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Address Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            font-weight: lighter;
+        }
+        .container {
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #32CD32;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            border: none;
+            padding: 5px;
+            box-sizing: border-box;
+            outline: none;
+            background-color: #32CD32;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-info div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-info label {
+            font-weight: bold;
+            width: 30%;
+        }
+        .contact-info input {
+            width: 65%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><b>Student Present Address</b></h2>
+        <table style="font-weight: lighter;">
+            <tr>
+                <th>Semester</th>
+                <th>Year</th>
+                <th>Hostler / Dayscholar</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>III</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>IV</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>VI</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>VII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>VIII</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        
+        <div class="section">
+            <p>Address for Communication with Phone No:</p>
+            <input type="text" style="width: 100%;">
+            <br><br>
+            <div class="contact-info">
+                <div>
+                    <label style="font-weight: lighter;">Father's Ph. No:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label style="font-weight: lighter;">Mother's Ph. No:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label style="font-weight: lighter;">Student's No:</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label style="font-weight: lighter;">Signature of the Student:</label>
+            <input type="text" style="width: 50%;">
+        </div>
+    </div>
+</body>
+</html>

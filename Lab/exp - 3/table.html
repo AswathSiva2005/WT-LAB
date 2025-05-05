@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Book</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            width: 700px;
+            margin: auto;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #32CD32;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .header input, table input, p input {
+            border: none;
+            width: 100px;
+            text-align: center;
+            background-color: #32CD32;
+        }
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        td input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>
+                PROGRAMME: <input type="text"> &nbsp;&nbsp;&nbsp;&nbsp;
+                BRANCH: <input type="text"> &nbsp;&nbsp;&nbsp;&nbsp;
+                SEMESTER: <input type="text">
+            </p>
+            <p style="margin-right: 430px;">Register No.: <button style="background-color: #32CD32; height: 25px;"><input type="text"></p></button>
+        </div>
+        <table>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Course Code & Course Name</th>
+                <th>Credit</th>
+                <th>CA Marks (50)</th>
+                <th>End Semester Grade (Dec 20)</th>
+                <th>End Semester Grade (May 20)</th>
+                <th>End Semester Grade (Dec 20)</th>
+                <th>End Semester Grade (May 20)</th>
+            </tr>
+            <tr><td>1</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>2</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>3</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>4</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>5</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>6</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>7</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>8</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>9</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+            <tr><td>10</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+        </table>
+        <p>Attendance: <button style="background-color: #32CD32;"><input type="text" style="width: 50px;"></button> % &nbsp;&nbsp; GPA: <input type="text" style="width: 50px;"> &nbsp;&nbsp; CGPA: <input type="text" style="width: 50px;"></p>
+        <p style="display: flex; align-items: center;">Remarks (if any): <input type="text" style="margin-left: 10px; width: 200px;"></p>
+
+        <div class="signature" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <canvas id="signatureBox" width="200" height="50" style="border: 1px solid black;"></canvas>  
+                <p>Signature of the Student</p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <canvas id="advisorSignature" width="200" height="50" style="border: 1px solid black;"></canvas>
+                <p>Class Advisor</p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <canvas id="hodSignature" width="200" height="50" style="border: 1px solid black;"></canvas>
+                <p>Head of the Department</p>
+            </div>
+        </div>
+
+
+                
+</body>
+</html>

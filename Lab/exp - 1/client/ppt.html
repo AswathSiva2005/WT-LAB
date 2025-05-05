@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="icon" href="logo icon.png" type="image/icon type">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+        }
+        .col1 {
+            background-color: #004c93;
+            height: 100vh;
+            width: 300px;
+            padding: 20px;
+            position: fixed;
+            overflow-y: auto;
+        }
+        .content {
+            margin-left: 320px;
+            padding: 20px;
+            width: calc(100% - 320px);
+        }
+        .personimg {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+        }
+        .nav-links h3 {
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .nav-links h3:hover {
+            background-color: black;
+        }
+        .name {
+            color: #004c93;
+        }
+        #pptimg {
+            height: 300px;
+            width: 400px;
+        }
+        .edu-section {
+            background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col1">
+            <center><img class="personimg" src="ASWATH img 2.jpg" alt="Person Image"></center>
+            <div class="nav-links">
+                <a href="index.html"><h3>About</h3></a>
+                <a href="edu.html"><h3>Educational Details</h3></a>
+                <a href="ppt.html"><h3>Paper Presentations</h3></a>
+                <a href="otherinfo.html" target="_blank"><h3>Other Information</h3></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="edu-section">
+            <h2 id="ppt">Paper Presentation Completed:</h2>
+            <p><b>KGISL college</b> - Topic "Blockchain Beyond Cryptocurrency"</p>
+            <p>ㅤ<br>
+                ㅤ<br>
+                ㅤ<br>
+            </p>
+            <img id="pptimg" src="ppt img.jpg"> 
+        </div>
+        </div>
+    </div>
+</body>
+</html>

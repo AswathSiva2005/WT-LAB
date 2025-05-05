@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+     .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center">Food Order</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza</h5>
+                        <p class="card-text">Delicious cheesy pizza with fresh toppings.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">Juicy beef or chicken burger with fresh veggies.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta</h5>
+                        <p class="card-text">Creamy Alfredo or spicy Arrabiata pasta.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1359321/pexels-photo-1359321.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi</h5>
+                        <p class="card-text">Freshly made sushi with authentic flavors.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Steak</h5>
+                        <p class="card-text">Perfectly grilled steak cooked to your preference.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Salad</h5>
+                        <p class="card-text">Healthy and fresh garden salad with organic ingredients.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/ice-cream-with-fruits-hd-8k-wallpaper-stock-photographic-image_890746-105658.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">Refreshing ice cream with various flavors.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pancakes</h5>
+                        <p class="card-text">Fluffy pancakes with maple syrup and fruits.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich</h5>
+                        <p class="card-text">Freshly made sandwiches with delicious fillings.</p>
+                        <button class="btn btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".btn-primary").forEach(button => {
+            button.addEventListener("click", function() {
+                const card = this.closest(".card");
+                const foodName = card.querySelector(".card-title").textContent;
+                const foodPrice = "₹199"; // You can update this dynamically if needed
+    
+                const email = prompt("Enter your email:");
+                if (!email) return;
+    
+                const quantity = prompt("Enter quantity:");
+                if (!quantity || isNaN(quantity)) return;
+    
+                const address = prompt("Enter your address:");
+                if (!address) return;
+    
+                const orderDetails = {
+                    food: foodName,
+                    price: foodPrice,
+                    email: email,
+                    quantity: quantity,
+                    address: address
+                };
+    
+                localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
+                window.location.href = "order_confirmation.html";
+            });
+        });
+    </script>
+    
+</body>
+</html>

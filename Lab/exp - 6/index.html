@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                              
+    <title>Login</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            text-align: center;
+            width: 350px;
+            box-shadow: 10px 10px 15px 5px rgb(66, 70, 71);
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px; 
+            font-size: 16px;
+        }
+        .login {
+            width: 95%;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        marquee:hover{
+            background-color:rgb(0, 0, 0);
+            transition: 1s;
+             color: white;   
+        }
+        marquee{
+        font-size: 50px;
+        }
+        .login:hover{
+                background-color: black;
+                color: white;
+            transition: .5s;
+        }
+        body{
+            background-image: url('CRUD.jpeg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <head><marquee>CRUD OPERATIONS <!-- ON A TWO TIER ARCHITECTURE --></marquee></head>
+    
+
+<div class="container">
+    <form id="crudForm">
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="button" value="Insert" class="login" onclick="performAction('insert')" />
+        <input type="button" value="Update" class="login" onclick="performAction('update')" />
+        <input type="button" value="Delete" class="login" onclick="performAction('delete')" />
+    </form>
+</div>
+
+<script>
+function performAction(action) {
+    const user = document.getElementById("user").value;
+    const password = document.getElementById("password").value;
+
+    if (!user) {
+        alert("User field is required!");
+        return;
+    }
+
+    let url = `http://localhost:8085/${action}?user=${user}`;
+    if (action !== "delete" && password) {
+        url += `&password=${password}`;
+    }
+
+    fetch(url)
+        .then(response => response.text())
+        .then(data => alert(data))
+        .catch(error => console.error("Error:", error));
+}
+</script>
+
+</body>
+</html>

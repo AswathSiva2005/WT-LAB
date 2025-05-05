@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login</title>
+    <style>
+        input{
+            border: 2px solid black;
+            background-color: rgb(36, 231, 253);
+            border-radius: 3px;
+            font-size: 20px;
+            transition: .5s;
+        }
+        input:hover{
+            background-color: rgb(17, 86, 224);
+        }
+        button{
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br><br>
+            <button type="submit">Submit</button><br>
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let errorMessage = document.getElementById("errorMessage");
+
+            if (password !== confirmPassword) {
+                errorMessage.textContent = "Not same password!";
+                event.preventDefault();
+            } else {
+                errorMessage.textContent = "";
+                alert("Password: " + password);
+            }
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+<form action="http://localhost:3000/server" method="get">
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" required/><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" required/><br>
+
+    <input type="submit" value="Login" name="login"/>
+</form>
+
+</body>
+</html>
+
